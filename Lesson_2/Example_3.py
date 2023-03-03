@@ -10,7 +10,6 @@ for i in range(1,digit + 1):
     value = value + ((i+1)/i)**i
     s.append(value)
 
-for e in range(len(s)):
-    total = total + round(s[e])
+total = round(sum(s))
         
 print("Сумма чисел последовательности при n", digit, "будет =", total)
